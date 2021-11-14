@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import dompurify from 'dompurify';
+import marked from 'marked';
 
 function App() {
+  const [input, setInput] = useState<string>('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => (
+    setInput(e.target.value)
+  );
+
+  const createMarkup = (txt: string) => (
+    { __html: dompurify.sanitize(marked.parse(txt, { breaks: true })) }
+  );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <textarea
+          value={input}
+          onChange={handleChange}
+          placeholder="Write markdown here..."
+        />
+        <div dangerouslySetInnerHTML={createMarkup(input)} />
+      </div>
     </div>
   );
 }
