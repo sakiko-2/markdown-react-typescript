@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/markdown-react-typescript/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/markdown-react-typescript/static/js/main.f1b46fb6.chunk.js",
+    "main.js.map": "/markdown-react-typescript/static/js/main.f1b46fb6.chunk.js.map",
+    "runtime-main.js": "/markdown-react-typescript/static/js/runtime-main.8518723f.js",
+    "runtime-main.js.map": "/markdown-react-typescript/static/js/runtime-main.8518723f.js.map",
+    "static/js/2.d7eab537.chunk.js": "/markdown-react-typescript/static/js/2.d7eab537.chunk.js",
+    "static/js/2.d7eab537.chunk.js.map": "/markdown-react-typescript/static/js/2.d7eab537.chunk.js.map",
+    "index.html": "/markdown-react-typescript/index.html",
+    "service-worker.js": "/markdown-react-typescript/service-worker.js",
+    "service-worker.js.map": "/markdown-react-typescript/service-worker.js.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/markdown-react-typescript/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.d7eab537.chunk.js.LICENSE.txt": "/markdown-react-typescript/static/js/2.d7eab537.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8518723f.js",
+    "static/js/2.d7eab537.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.f1b46fb6.chunk.js"
+  ]
+}
